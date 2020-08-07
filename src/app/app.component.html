@@ -1,0 +1,19 @@
+<div class="container">
+
+  <header class="header" style="display: flex; align-items:center;  ">
+      <div>
+        Todo Application
+      </div>
+  </header>
+
+  <div id="toolbar">
+    <button class="btn--primary" (click)="createList()">Add List</button>
+  </div>
+
+  <div id="content" cdkDropListGroup>
+      <div *ngFor="let lst of list; trackBy: listTrackBy">
+        <app-list [listData]="lst" (deleteList)="onListDelete($event)" (createCard)="onCreateCard($event)"></app-list>
+      </div>      
+  </div>
+
+</div>

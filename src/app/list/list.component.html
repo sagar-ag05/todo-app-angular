@@ -1,0 +1,36 @@
+<div class="list">
+    <div class="list-header">     
+        <div>{{ listData.listName }} </div>
+        <button class="close-button" (click)="deleteListPublish(listData.id)">&times;</button>
+    </div>
+    <section class="card-list" [attr.data-listname]="listData.listName" id="{{listData.id}}" cdkDropList [cdkDropListData]="listData.cards" (cdkDropListDropped)="drop($event)">
+        <div *ngFor="let card of listData.cards" class="card" cdkDrag>
+            {{ card }}
+        </div>
+        <!-- {{ card.cardName }} -->
+        
+    </section>
+    <div>
+        <a class="add-card" (click)="onCreateCard(listData.id)">+ Add a card</a>
+    </div>
+</div>
+
+
+
+<!--<div class="board-columns" cdkDropListGroup>
+    <div class="board-column" *ngFor="let column of board.columns">
+
+        <div class="column-title">
+            {{ column.name }}
+        </div>
+
+        <div class="tasks-container" cdkDropList [cdkDropListData]="column.tasks" (cdkDropListDropped)="drop($event)">
+            <div class="task" *ngFor="let item of column.tasks" cdkDrag>{{ item }}</div>
+        </div>
+    </div>
+</div>-->
+
+    
+
+  
+

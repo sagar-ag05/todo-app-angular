@@ -1,0 +1,29 @@
+.list-name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 15px;
+    padding: 10px;
+    width: 93%;
+    min-width: 90%;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: lightskyblue
+}
+
+.error-label {
+    color: darkred;
+    font-size: 12px;
+}
