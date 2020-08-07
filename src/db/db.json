@@ -1,0 +1,20 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "listName": "ToDo",
+      "cards": [
+        "Pay MSEB Bill",
+        "Pay Mob Bill"
+      ]
+    },
+    {
+      "id": 3,
+      "listName": "Done",
+      "cards": [
+        "Pay Flipkart",
+        "Pay Amazon"
+      ]
+    }
+  ]
+}

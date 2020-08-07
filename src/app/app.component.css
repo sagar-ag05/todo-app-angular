@@ -1,0 +1,35 @@
+header {
+    height: 60px;
+    background-color: #AFA040;
+}
+  
+.container {    
+    min-height:100vh;
+    margin: auto;
+    box-sizing:border-box;
+    background-color:darkgoldenrod;
+}
+
+header div {
+    padding-left: 20px;
+}
+
+.close-button{
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+#content {
+    display:flex; padding: 30px;
+    flex-wrap: wrap;
+}
+
+#toolbar{
+    height: 50px; display: flex; align-items: center; padding-left: 20px;
+    background-color: #756a24;
+}
+.btn--primary{
+    height: 30px;border-radius: 3px;width: 80px;cursor: pointer;background-color: cadetblue;
+    font-size: 0.8em; border: none
+}
