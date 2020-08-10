@@ -1,5 +1,16 @@
 This is a TODO Application built using angular.
 
+Dev Environment setup:
+
+- Clone the repository locally.
+- In the root folder, run npm install
+- In one terminal navigate to db folder and run json-server db.json
+- In other termianl in root folder run npm serve
+- The application will start. Open browser and hit the url http://localhost:4200 to access the application.
+
+Running E2E tests using cypress
+
+
 # TodoApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.22.
@@ -16,13 +27,11 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- Find the path of cypress in node_modules bin folder (like:  /TodoApp/node_modules/.bin ) and run the command
+   node_modules/.bin/cypress open
+- This will run all the basic E2E tests.
 
 ## Further help
 
