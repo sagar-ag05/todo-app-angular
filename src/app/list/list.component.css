@@ -30,6 +30,7 @@
     margin: 15px 0px 15px 0px; 
     background-color: white;
     box-shadow: 5px 8px 5px 0px #ccc;
+    cursor: move;
 }
 
 .add-card{
