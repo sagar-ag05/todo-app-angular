@@ -1,6 +1,6 @@
 <div>
-    <div>
-        {{ labels.title }}
+    <div id="headline">
+        {{labels.title}}
     </div>
     <div>
         <input class="list-name" type="text" [(ngModel)]="listName" placeholder="{{ labels.placeholder }}" length="50" />
@@ -8,6 +8,6 @@
     </div>
 </div>
 <div class="footer">
-    <button (click)="cancel()" class="btn">Cancel</button>
-    <button (click)="create()" class="btn btn-primary">Create</button>
+    <button id="cancel" (click)="cancel()" class="btn">Cancel</button>
+    <button id="create" (click)="create()" class="btn btn-primary">Create</button>
 </div>

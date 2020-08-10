@@ -1,6 +1,8 @@
 header {
     height: 60px;
     background-color: #AFA040;
+    display: flex;
+    align-items:center; 
 }
   
 .container {    
