@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, Subject } from 'rxjs';
-import { mergeMap } from 'rxjs/operators';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
     providedIn: 'root'
 })
 export class CoreService {
 
-    apiBaseUrl = 'http://localhost:3000/';
+    apiBaseUrl = environment.apiUrl;
     newList = new Subject();
 
     constructor(private httpClient: HttpClient){
