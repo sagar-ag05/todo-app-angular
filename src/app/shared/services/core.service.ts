@@ -17,22 +17,22 @@ export class CoreService {
 
     //this will return lists and cards data both
     getAllLists(): Observable<any> {
-        const url = this.apiBaseUrl + 'lists'
+        const url = this.apiBaseUrl;
         return this.httpClient.get(url);
     }
 
     getListById(listId ){
-        const url = this.apiBaseUrl + 'lists/' + listId;
+        const url = this.apiBaseUrl + '/' + listId;
         return this.httpClient.get(url);
     }
 
     createList(listObj) {
-        const url = this.apiBaseUrl + 'lists'
+        const url = this.apiBaseUrl;
         return this.httpClient.post(url, listObj);
     }
 
     deleteList(listId) {
-        const url = this.apiBaseUrl + 'lists/' + listId
+        const url = this.apiBaseUrl + '/' + listId
         return this.httpClient.delete(url);
     }
 
@@ -46,15 +46,7 @@ export class CoreService {
 
     //update list with card data, like removing and adding cards
     updateList (listObj) {
-        const url = this.apiBaseUrl + 'lists/' + listObj.id
+        const url = this.apiBaseUrl + '/' + listObj.id
         return this.httpClient.put(url, listObj);
     }
-
-    /**
-     * 
-     * 
-     * 
-     */
-
-
 }
