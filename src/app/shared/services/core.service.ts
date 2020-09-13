@@ -21,7 +21,7 @@ export class CoreService {
         return this.httpClient.get(url);
     }
 
-    getListById(listId ){
+    getListById(listId) {
         const url = this.apiBaseUrl + '/' + listId;
         return this.httpClient.get(url);
     }
@@ -32,7 +32,7 @@ export class CoreService {
     }
 
     deleteList(listId) {
-        const url = this.apiBaseUrl + '/' + listId
+        const url = this.apiBaseUrl + '/' + listId;
         return this.httpClient.delete(url);
     }
 
@@ -46,7 +46,7 @@ export class CoreService {
 
     //update list with card data, like removing and adding cards
     updateList (listObj) {
-        const url = this.apiBaseUrl + '/' + listObj.id
+        const url = this.apiBaseUrl + '/' + listObj.id;
         return this.httpClient.put(url, listObj);
     }
 }
